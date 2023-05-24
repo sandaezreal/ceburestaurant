@@ -1,0 +1,86 @@
+{
+	"type":"FeatureCollection",
+	"features":[{
+		"type":"Feature",
+		"id":"cbr01",
+		"properties":{
+			"title": "AA BBQ",
+			"letter": "G",
+			"restotype":"3 Star",
+			"speciality":"Seafood",
+			"description": "AA BBQ Experience",
+			"visits":"56"
+        
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.86260986328125,10.323025760406285]
+		}},{
+		"type":"Feature",
+		"id":"cbr02",
+		"properties":{
+			"title": "Abaca Baking Company",
+			"restotype":"5 Star",
+			"speciality":"Cafe",
+			"description":"Big Discount",
+			"visits":"76"
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.80630493164062,10.567472155111538]
+		}},{
+		"type":"Feature",
+		"id":"cbr03",
+		"properties":{
+			"title": "Ilaputi",
+			"restotype":"1 Star",
+			"speciality":"Korean",
+			"description":"Surprisingly delicious food with a twist.",
+			"visits":67
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.68545532226561,10.371660215460267]
+		}},{
+		"type":"Feature",
+		"id":"cbr04",
+		"properties":{
+			"title": "Cafe Marco",
+			"restotype":"4 Star",
+			"speciality":"Japanese",
+			"description":"Great Food! Amazing staff!",
+			"visits":119
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.97518188476561,10.834654797047353]
+		}},{
+		"type":"Feature",
+		"id":"cbr05",
+		"properties":{
+			"title": "Pizzeria Michelangelo",
+			"restotype":"1 Star",
+			"speciality":"Pasta",
+			"description":"I was expecting better but value for money",
+			"visits":77
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.90518188476561,10.834654797047353]
+		}
+	},{ 
+		"type":"Feature",
+		"id":"cbr06",
+		"properties":{
+			"title": "Vikings Luxury Buffet",
+			"restotype":"5 Star",
+			"speciality":"Pasta",
+			"description":"The food is Great and very satisfying as its unlimited it satisfied our food cravings",
+			"visits":44
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.41629028320312,9.886334212670986]
+		}
+	}]
+}
