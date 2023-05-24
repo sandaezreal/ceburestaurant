@@ -1064,7 +1064,7 @@
 
                 <!-- Google Map API -->
                 <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZBdbvczlz2tZl7KMokuobfLk6q6Us_no&libraries=drawing&callback=initMap">
+                    src="https://maps.googleapis.com/maps/api/js?key=InsertYourKeyHere&libraries=drawing&callback=initMap">
                 </script>
                 <!-- Bootstrap core JavaScript-->
                 <script src="vendor/jquery/jquery.min.js"></script>
