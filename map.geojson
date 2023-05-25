@@ -60,7 +60,7 @@
 		"properties":{
 			"title": "Pizzeria Michelangelo",
 			"restotype":"1 Star",
-			"speciality":"Pasta",
+			"speciality":"Pizza",
 			"description":"I was expecting better but value for money",
 			"visits":77
 		},
@@ -74,7 +74,7 @@
 		"properties":{
 			"title": "Vikings Luxury Buffet",
 			"restotype":"5 Star",
-			"speciality":"Pasta",
+			"speciality":"Japanese",
 			"description":"The food is Great and very satisfying as its unlimited it satisfied our food cravings",
 			"visits":44
 		},
