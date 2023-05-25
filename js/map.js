@@ -19,7 +19,7 @@ function initMap() {
 	});
 	
 	// get geoJSON data using jQuery
-	$.getJSON("http://localhost/ceburestaurant/map.geojson", function(data) {
+	$.getJSON("https://sandaezreal.github.io/ceburestaurant/map.geojson", function(data) {
 		
 		geoJSON_DATA.push(data); 
 		var features = map.data.addGeoJson(data);
