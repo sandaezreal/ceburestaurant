@@ -19,7 +19,7 @@ function initMap() {
 	});
 	
 	// get geoJSON data using jQuery
-	$.getJSON("https://sandaezreal.github.io/ceburestaurant/map.geojson", function(data) {
+	$.getJSON("http://localhost/ceburestaurant/map.geojson", function(data) {
 		
 		geoJSON_DATA.push(data); 
 		var features = map.data.addGeoJson(data);
@@ -83,7 +83,7 @@ function initMap() {
 		incrementMarkerVisits(e);
 		
 		// assemble properties in a single array
-		var info = [e.feature.getProperty('title'), e.feature.getProperty('description'), e.feature.getProperty('speciality'), e.feature.getProperty('restotype'), e.feature.getProperty('visits')];
+		var info = [e.feature.getProperty('title'), e.feature.getProperty('description'), e.feature.getProperty('speciality'), e.feature.getProperty('restotype'), e.feature.getProperty('visits'),e.feature.getProperty('title')];
 		
 		showMarkerInfo(e, info);
 		
@@ -201,12 +201,12 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 	);
 	infoWindow.open(map);
   }
-  
 
 $(".close").on("click", function() {
+
 	$(".popup-overlay , .popup-content").removeClass("active");
 	$(".popup-overlay-getdirection , .popup-content").removeClass("active");
-
+    $(".direction-popup").removeClass("active");
   });
   
 //   $(".close-getdirection").on("click", function() {
@@ -321,14 +321,13 @@ function incrementMarkerVisits(e) {
     number++;
     totalvisits.innerHTML = number;
 });
+
+
 function applyFilter(haystack, action, type) {
 	
-	//console.log('Haystack: ' + haystack);
-	//console.log('Action: ' + action);
-
 	map.data.setStyle(function(feature) {
 		if (action == 'clearall') {
-			return {visible: false};
+			return {visible: true};
 		} else {
 			
 			 if(type == "speciality"){	
@@ -341,6 +340,14 @@ function applyFilter(haystack, action, type) {
 			 } else if (type == "rating"){
 				var rtype = feature.getProperty('restotype');
 	
+				if ($.inArray(rtype,haystack) != -1)
+					return {visible: true };
+				else
+					return {visible: false };
+	
+			 }  else if (type == "search"){
+				var rtype = feature.getProperty('title');
+	 
 				if ($.inArray(rtype,haystack) != -1)
 					return {visible: true };
 				else
@@ -563,4 +570,3 @@ var pieChart = new Chart(oilCanvas, {
 	}
 }
 });
-
